@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author guill
  */
 public class MovieRentalTest {
+    Movie h2o = new Movie("theManWhoKnewTooMuch", Movie.CHILDRENS);
     
     public MovieRentalTest() {
     }
@@ -57,8 +58,8 @@ public class MovieRentalTest {
     @Test
     public void testGetMovie() {
         System.out.println("getMovie");
-        MovieRental instance = new MovieRental(new Movie("theManWhoKnewTooMuch", Movie.CHILDRENS), 2);
-        Movie expResult = new Movie("theManWhoKnewTooMuch", Movie.CHILDRENS);
+        MovieRental instance = new MovieRental(h2o, 2);
+        Movie expResult = h2o;
         Movie result = instance.getMovie();
         assertEquals(expResult, result);
         /*// TODO review the generated test code and remove the default call to fail.

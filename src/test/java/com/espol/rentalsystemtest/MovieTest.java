@@ -48,7 +48,7 @@ public class MovieTest {
         int result = instance.getPriceCode();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -57,11 +57,12 @@ public class MovieTest {
     @Test
     public void testSetPriceCode() {
         System.out.println("setPriceCode");
-        int arg = 0;
-        Movie instance = null;
+        int arg = Movie.NEW_RELEASE;
+        Movie instance = new Movie("Over the Moon", Movie.CHILDRENS);
         instance.setPriceCode(arg);
+        assertEquals(arg, instance.getPriceCode());
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
