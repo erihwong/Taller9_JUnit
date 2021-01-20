@@ -13,6 +13,14 @@ class Customer {
         _name = name;
     }
 
+    public ArrayList<MovieRental> getMovieRentals() {
+        return _movieRentals;
+    }
+
+    public ArrayList<VideoGameRental> getVideoGameRental() {
+        return _videoGameRental;
+    }
+    
     public void addMovieRental(MovieRental arg) {
         _movieRentals.add(arg);
     }
