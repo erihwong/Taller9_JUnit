@@ -75,8 +75,8 @@ public class CustomerTest {
     @Test
     public void testStatement() {
         System.out.println("statement");
-        Customer instance = null;
-        String expResult = "";
+        Customer instance = new Costumer("Costumer");
+        String expResult = "Rental Record for  Costumer/nAmount owed is 0/nYou earned 0 frequent center points";
         String result = instance.statement();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
