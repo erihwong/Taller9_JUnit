@@ -75,12 +75,12 @@ public class CustomerTest {
     @Test
     public void testStatement() {
         System.out.println("statement");
-        Customer instance = new Customer("Customer");
-        String expResult = "Rental Record for  Customer/nAmount owed is 0/nYou earned 0 frequent center points";
+        Customer instance = new Customer("Rodrigo");
+        String expResult = "Rental Record for Rodrigo\nAmount owed is 0.0\nYou earned 0 frequent renter points";
         String result = instance.statement();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
