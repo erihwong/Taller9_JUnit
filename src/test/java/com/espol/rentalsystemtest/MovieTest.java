@@ -65,4 +65,9 @@ public class MovieTest {
         //fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testGetTitle() {
+        Movie instance = new Movie("theManWhoKnewTooMuch",Movie.CHILDRENS);
+        assertEquals("theManWhoKnewTooMuch", instance._title);
+    }
 }
